@@ -25,7 +25,7 @@ function App() {
                         <div className="grid grid-cols-5 mt-10 grid-rows-5 gap-3">
                             <div className="col-span-2 h-64 bg-white row-span-2"></div>
                             <div className="row-span-3 bg-blue-green col-start-1 row-start-3">2</div>
-                            <div className="row-span-3 -full w-full overflow-hidden  bg-fixed opacity-1 transition duration-300  ease-in-out hover:opacity-80 bg-transparent col-start-3 row-start-1"><img className={"h-full  max-w-xs "} src={Knalrecept}/></div>
+                            <div className="row-span-3 cursor-pointer -full w-full overflow-hidden  bg-fixed opacity-1 transition duration-300  ease-in-out hover:opacity-80 bg-transparent col-start-3 row-start-1"><a href={'project'}><img className={"h-full  max-w-xs "} src={Knalrecept}/></a> </div>
                             <div className="row-span-3 bg-steal-blue col-start-2 row-start-3">5</div>
                             <div className="col-span-2 bg-white row-span-2 col-start-3 row-start-4">6</div>
                             <div className="row-span-3 bg-blue-green col-start-4 row-start-1">7</div>

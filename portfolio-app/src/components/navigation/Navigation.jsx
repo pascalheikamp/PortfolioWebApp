@@ -1,13 +1,12 @@
 
 
 export default function Navigation() {
-
     return(
         <>
             <section className={"relative h-32 bg-light-purple"}>
                 <nav className={'relative top-24'}>
                     <ul className={'flex text-2xl text-light-blue justify-around'}>
-                        <li className={"cursor-pointer"}>Home</li>
+                        <li className={"cursor-pointer"}><a href={'/'}>Home </a></li>
                         <li className={'cursor-pointer'}>Persona</li>
                         <li className={'cursor-pointer'}>Projects</li>
                         <li className={'cursor-pointer'}>Software skills</li>

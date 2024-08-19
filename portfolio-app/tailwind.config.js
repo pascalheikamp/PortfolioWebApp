@@ -18,6 +18,7 @@ export default {
       'steal-blue':'#C5D9E9',
       'gray-white': '#f8f9fa',
       'ford-blue': '#100028',
+      'black' : '#000',
       'white': '#F2F1EF',
     },
     extend: {},
