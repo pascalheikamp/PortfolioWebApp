@@ -19,6 +19,7 @@ export default {
       'gray-white': '#f8f9fa',
       'ford-blue': '#100028',
       'black' : '#000',
+      'off-white': '#FAF9F6',
       'white': '#F2F1EF',
     },
     extend: {},
