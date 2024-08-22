@@ -1,13 +1,17 @@
 import Navigation from "../components/navigation/Navigation.jsx";
+import ReactPlayer from 'react-player'
 import HeaderImage from '../assets/knalrecept-header.jpg'
 import ResearchIcon from '../assets/research-icon.png';
 import KnalReceptLogo from '../../src/assets/knalrecept.png';
 import AboutFace from '../assets/aboutface-book.jpg';
 import './ProjectDetail.css';
+import {useRef} from "react";
+import VID from '../assets/specializeme-onderzoekendetechnoloog.mp4'
 
 
 export default function ProjectDetailPage() {
-
+    const playerRef = useRef(null);
+    const VIDEO_PATH = '../assets/specializeme-onderzoekendetechnoloog.mp4';
     return (
         <>
             <Navigation/>
@@ -80,21 +84,54 @@ export default function ProjectDetailPage() {
                             className="col-span-2 row-span-2 col-start-4 pt-3  bg-off-white shadow-xl pr-3 w-full row-start-2">
                             <h1 className={"text-center font-bold"}>About face</h1>
                             <div className={'pl-10  pb-10 mt-4 pr-10'}>
-                                <p>Het boek wat ik gekozen had voor Specialize me was About face. Dit boek gaat voornamelijk over wat de belangrijke concepten zijn om een interactie ontwerp te ontwikkelen voor een gebruiker. </p>
+                                <p>Het boek wat ik gekozen had voor Specialize me was About face. Dit boek gaat
+                                    voornamelijk over wat de belangrijke concepten zijn om een interactie ontwerp te
+                                    ontwikkelen voor een gebruiker. </p>
                                 <img className={'w-44 pt-5 pb-5 ml-auto mr-auto'} src={AboutFace}/>
-                                <p className={'mt-3'}>Het hoofdstuk waar ik mij vooral op had gefocust was design research. Hier ging het voornamelijk wat de voor -en nadelen zijn van kwalitieve en kwantitieve gegevens. Kwantativieve gevens geeft een indicatie over wie je doelgroep is en bij kwalitieve gegevens krijg je een specifieker antwoord op je onderzoeksvragen.</p>
+                                <p className={'mt-3'}>Het hoofdstuk waar ik mij vooral op had gefocust was design
+                                    research. Hier ging het voornamelijk wat de voor -en nadelen zijn van kwalitieve en
+                                    kwantitieve gegevens. Kwantativieve gevens geeft een indicatie over wie je doelgroep
+                                    is en bij kwalitieve gegevens krijg je een specifieker antwoord op je
+                                    onderzoeksvragen.</p>
 
                             </div>
                         </div>
-                        <div className="col-span-2 pt-3 row-span-2 bg-off-white shadow-xl col-start-1 row-start-4"><h1
-                            className={'text-center font-bold'}>Toepassing</h1></div>
-                        <div className="col-span-2 pt-3 row-span-2  bg-off-white shadow-xl col-start-4 row-start-5"><h1
+                        <div className={'col-span-2 flex    pt-3 row-span-2 bg-off-white shadow-xl col-start-1 row-start-4'}>
+                        <div className={" ml-10 "}><h1
+                            className={' font-bold'}>Toepassing</h1>
+                            <div className={'pb-10 mt-4 '}>
+                                <p>Ik heb via Google forms een survey opgesteld dat ongeveer uit 11 vragen bestaat. De
+                                    meeste vragen zijn multiple choice waardoor het voor de gebruiker sneller is om de
+                                    survey in te vullen.</p>
+                                <p className={'mt-3'}>De survey had ik gedeeld via social media en na een week tijd
+                                    kreeg ik 23 antwoorden. De antwoorden heb ik geanalyseerd en was tot conclusie
+                                    gekomen
+                                    dat het niet de goede doelgroep voor het project waar ik mee bezig was.</p>
+                                <p className={'mt-3'}>De survey heb ik daarom niet verder gebruikt en ben toen
+                                    overgestapt naar de interviews. In het filmpje zal ik toelichten hoe ik de
+                                    interviews heb aangepakt en waar rekening heb gehouden bij het houden van een
+                                    interview</p>
+                            </div>
+                        </div>
+                            <div className={'relative mt-3 w-40 mr-auto left-60'}>
+                                <ReactPlayer  ref={playerRef} url={VID} controls={true} />
+                            </div>
+                        </div>
+                        <div className="col-span-2 mt-20 pt-3 row-span-2  bg-off-white shadow-xl col-start-4 row-start-5"><h1
                             className={'text-center font-bold'}>Reflectie</h1>
                             <div className={'pl-10  pb-10 mt-4 pr-10'}>
-                                <p>Als onderzoekende technoloog vond ik dat ik een goede bijdrage heb geleverd aan het team. Ik was actief bij de meetings en stelde vragen als er iets onduidelijk was. Wat ik wel wat minder goed vond gaan waren de interviews, want ik vond het nog best wel spannend om mensen te interviewen die ik niet ken. Hierdoor stelde ik de interviews uit.  </p>
-                                <p className={'mt-3'}>Doordat ik de interviews heb gedaan weet ik nu veel meer over het probleem waar mensen tegen aan lopen en zie ik ook dat het een stuk effectiever is dan een survey.  De lessen hebben mij geholpen hoe ik een interview kan opzetten en waar ik rekening mee moet houden als ik een interview ga houden..</p>
+                                <p>Als onderzoekende technoloog vond ik dat ik een goede bijdrage heb geleverd aan het
+                                    team. Ik was actief bij de meetings en stelde vragen als er iets onduidelijk was.
+                                    Wat ik wel wat minder goed vond gaan waren de interviews, want ik vond het nog best
+                                    wel spannend om mensen te interviewen die ik niet ken. Hierdoor stelde ik de
+                                    interviews uit. </p>
+                                <p className={'mt-3'}>Doordat ik de interviews heb gedaan weet ik nu veel meer over het
+                                    probleem waar mensen tegen aan lopen en zie ik ook dat het een stuk effectiever is
+                                    dan een survey. De lessen hebben mij geholpen hoe ik een interview kan opzetten en
+                                    waar ik rekening mee moet houden als ik een interview ga houden..</p>
 
-                            </div></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
