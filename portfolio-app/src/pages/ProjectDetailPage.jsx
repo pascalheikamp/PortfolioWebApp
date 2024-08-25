@@ -2,7 +2,7 @@ import Navigation from "../components/navigation/Navigation.jsx";
 import ReactPlayer from 'react-player'
 import HeaderImage from '../assets/knalrecept-header.jpg'
 import ResearchIcon from '../assets/research-icon.png';
-import KnalReceptLogo from '../../src/assets/knalrecept.png';
+import KnalReceptLogo from '../assets/knalrecept.png';
 import AboutFace from '../assets/aboutface-book.jpg';
 import './ProjectDetail.css';
 import {useRef} from "react";
