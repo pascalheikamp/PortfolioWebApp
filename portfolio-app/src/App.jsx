@@ -35,7 +35,6 @@ function App() {
                     </section>
                 </main>
                 <footer className={'bg-blue h-96'}>
-eyy45y
                 </footer>
             </div>
         </>

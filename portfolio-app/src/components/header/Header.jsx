@@ -17,20 +17,21 @@ export default function Header() {
                 <section
                     className={"h-full   bg-dark-blue shadow-2xl  pt-14 grid grid-cols-2 grid-rows-1 col-span-3"}>
                     <div className={"text-light-blue m-auto mr-auto"}>
-                        <div className={"flex flex-col justify-evenly"}>
-                            <h1 className={"text-5xl "}>Software developer portfolio</h1>
-                            <h2 className={"mt-6 text-center"}>Slide title here</h2>
-                            <p></p>
+                        <div className={"flex flex-col  w-full  pl-20  pr-10 justify-evenly"}>
+                            <h1 className={"text-5xl "}>Portfolio</h1>
+                            <p className={"mt-6 "}>Beste bezoeker, mijn naam is Pascal Heikamp en ik ben op dit moment student aan Hogeschool Rotterdam. De opleiding die ik hier volg is Creative media & game technologies</p>
+                            <p className={'mt-4'}>Op mijn portfolio website ziet u alle stages en opleidingen die afgerond heb en ook de projecten waar ik aangewerkt heb. Als u op project klikt via e de navigatie of u scrollt verder op de hoofdpagina naar projects dan kunt u mijn meest recente project zien.</p>
+                            <p className={'mt-4'}>Als u op de pagina van projects komt ziet u informatie over het project en zal ik ook toelichten hoe ik als onderzoekende technoloog aan de slag ben gegaan. Ik wens u veel kijkplezier!</p>
                         </div>
                     </div>
                     <div className={'flex w-auto mb-10 mr-40 pl-10   justify-center mt-44  h-auto'}>
 
-                        <img className={'w-96 relative top-40 mt-32 h-96 rounded-full'} src={Profile}/>
+                        <img className={'w-96 relative bottom-40 mt-32 h-96 rounded-full'} src={Profile}/>
                     </div>
                 </section>
                 <section className={""}>
                     <div className={"flex flex-col mt-20 justify-between"}>
-                        <h2 className={"absolute left-60 text-4xl mt-14"}>Scholen</h2>
+                        <h2 className={"absolute left-60 text-4xl mt-14"}>Opleidingen</h2>
                         <div
                             className={"bg-white  mt-32 ml-20  h-auto relative left-60  flex  mt-10 h-60 w-60 w-full shadow-2xl"}>
                             <img className={'absolute w-44 h-32'} src={HogeschoolRotterdam}/>
