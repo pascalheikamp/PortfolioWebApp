@@ -6,7 +6,7 @@ import DotNetLogo from '../../assets/dotnet.png';
 import DeltaNLogo from '../../assets/delta-n-logo.png';
 import DeltaNTeamImage from '../../assets/DeltaN-teamfoto.jpg'
 import IamITLogo from '../../assets/iamITlogo.png';
-import CompetaLogo from '../../assets/competa-logo.jpg';
+import CompetaLogo from '../../assets/competa-logo.png';
 import Navigation from "../navigation/Navigation.jsx";
 
 export default function Header() {

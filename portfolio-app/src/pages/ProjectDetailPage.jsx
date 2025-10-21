@@ -7,10 +7,12 @@ import AboutFace from '../assets/aboutface-book.jpg';
 import './ProjectDetail.css';
 import {useRef} from "react";
 import VID from '../assets/specializeme-onderzoekendetechnoloog.mp4'
+import { useParams } from "react-router-dom";
 
 
 export default function ProjectDetailPage() {
     const playerRef = useRef(null);
+    //const id = useParams()
     const VIDEO_PATH = '../assets/specializeme-onderzoekendetechnoloog.mp4';
     return (
         <>

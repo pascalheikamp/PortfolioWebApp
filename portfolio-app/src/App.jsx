@@ -1,44 +1,53 @@
-import {useState} from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Knalrecept from './assets/knalrecept.jpg'
+import { useEffect, useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import Knalrecept from "./assets/knalrecept.jpg";
 import Header from "./components/header/Header.jsx";
-import Profile from './assets/profile-picture.jpg';
-import ReactLogo from './assets/react-logo.png'
-import LaravelLogo from './assets/laravel-logo.png'
-import HogeschoolRotterdam from './assets/hogeschool-rotterdam.png'
-import BackgroundImage from './assets/background-image.jpg'
+import Pagination from "./components/Pagination.jsx";
+import Profile from "./assets/profile-picture.jpg";
+import ReactLogo from "./assets/react-logo.png";
+import LaravelLogo from "./assets/laravel-logo.png";
+import HogeschoolRotterdam from "./assets/hogeschool-rotterdam.png";
+import BackgroundImage from "./assets/background-image.jpg";
 import Navigation from "./components/navigation/Navigation.jsx";
+import TournatonProject from "./assets/tournaton.png";
+import pokemonbotlogo from "./assets/pokemon_chatbot-applogo.png"
+import musuemApp from "./assets/musuem-app.png"
+import aanmeldplatform from './assets/aanmeldplatform_landvanons.png'
+import ProjectGridLayout from "./components/projects/ProjectGridLayout.jsx";
 
 function App() {
-    const [count, setCount] = useState(0)
+  // const token  = dotenv.config({path: "../.env"}).process.env.GITHUB_TOKEN
+ // eslint-disable-next-line no-undef
 
-    return (
-        <>
-            <div className={'bg-ford-blue'}>
-                <Navigation/>
-                <Header/>
-                <main className={"bg-ford-blue  w-full h-full"}>
-                    <section className={'flex flex-col  mt-auto mb-auto  mt-20 '}>
-                        <h1 className={'text-4xl text-center text-light-blue'}>Projects</h1>
-                        <div className="grid grid-cols-5 mt-10 grid-rows-5 gap-3">
-                            <div className="col-span-2 h-64 bg-white row-span-2"></div>
-                            <div className="row-span-3 bg-blue-green col-start-1 row-start-3">2</div>
-                            <div className="row-span-3 cursor-pointer -full w-full overflow-hidden  bg-fixed opacity-1 transition duration-300  ease-in-out hover:opacity-60 bg-transparent col-start-3 row-start-1"><a href={'project'}><img className={"h-full  max-w-xs "} src={Knalrecept}/></a> </div>
-                            <div className="row-span-3 bg-steal-blue col-start-2 row-start-3">5</div>
-                            <div className="col-span-2 bg-white row-span-2 col-start-3 row-start-4">6</div>
-                            <div className="row-span-3 bg-blue-green col-start-4 row-start-1">7</div>
-                            <div className="row-span-5 bg-blue-green col-start-5 row-start-1">9 </div>
-                        </div>
+ 
+  const [count, setCount] = useState(0);
+  
+  // const ownProjects = allProjects.filter((p) => p === "pascalheikamp");
+  // const filteredProjects = projects.filter((i) => i.owner.login === ownProjects)
+  // if(ownProjects) {
+  //   const projectNames = projects.map((project) => (project.name))
+  //   console.log("The project names of pascal are: " + projectNames)
+  // }
+ 
 
-                    </section>
-                </main>
-                <footer className={'bg-blue h-96'}>
-                </footer>
-            </div>
-        </>
-    )
+  return (
+    <>
+      <div className={"bg-ford-blue"}>
+        <Navigation />
+        <Header />
+        <main className={"bg-ford-blue  w-full h-full"}>
+          <section className={"flex flex-col  mt-auto mb-auto  mt-20 "}>
+            <h1 className={"text-4xl text-center text-light-blue"}>Projects</h1>
+            <div className={"flex justify-center"}><h1 className={"text-3xl pr-20 text-center text-light-blue"}>School project</h1><h1 className={"text-3xl text-center text-light-blue"}>Eigen project</h1></div>
+           <ProjectGridLayout/>
+          </section>
+        </main>
+        <footer className={"bg-blue h-96"}></footer>
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;

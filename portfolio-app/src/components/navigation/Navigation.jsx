@@ -8,7 +8,7 @@ export default function Navigation() {
                     <ul className={'flex text-2xl text-light-blue justify-around'}>
                         <li className={"cursor-pointer"}><a href={'/'}>Home </a></li>
                         <li className={'cursor-pointer'}>Persona</li>
-                        <li className={'cursor-pointer'}>Projects</li>
+                        <li className={'cursor-pointer'}><a href={'/project'}>Projects</a></li>
                         <li className={'cursor-pointer'}>Software skills</li>
                     </ul>
                 </nav>
